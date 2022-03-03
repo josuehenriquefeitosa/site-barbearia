@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section id="home" class="home">
+        <header class="header">
+            <nav class="nav">
+                <ul>
+                    <li> 
+                        <a href="#home">Home</a>
+                    </li>
+                    <li> 
+                        <a href="#services">Serviços</a>
+                    </li>
+                    <li>
+                        <img src="" alt="">
+                    </li>
+                    <li>
+                        <a href="#gallery">Galeria</a>
+                    </li>
+                    <li>
+                        <a href="#appointment">Agendamento</a>
+                    </li>
+                    <li>
+                        <a href="#location">Localização</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            
+        </header>
+
+        <div class="banner">
+            <h1>Barber House</h1>
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="title">
+                <h2>Nossos Serviços</h2>
+            </div>
+            <div class="box">
+
+                    <div class="boxes">
+                        <h3>Cabelo</h3>
+                        <img src="./img/cabelo.png" alt="Cabelo">
+                        <p>Na tesoura ou na máquina,como o cliente preferir.</p>
+                        <span>R$ 30,00</span>
+                    </div>
+
+                    <div class="boxes">
+                        <h3>Barba</h3>
+                        <img src="./img/barba.png" alt="Barba">
+                        <p>Corte e desenho profissional de barba.</p>
+                        <span>R$ 20,00</span>
+                    </div>
+
+                    <div class="boxes">
+                        <h3>Cabelo + Barba</h3>
+                        <img src="./img/cabelo+barba.png" alt="Cabelo+Barba">
+                        <p>Pacote completo de cabelo e barba.</p>
+                        <span>R$ 50,00</span>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="title">
+                <h2>Galeria</h2>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="fotos">
+                    <img src="./img/vista-lateral-e-1.jpeg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="./img/img-corte-lateral.jpeg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="./img/vista-frontal-d.jpeg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="./img/social-lateral.jpeg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="./img/vista-lateral-tras.jpeg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="./img/foto-garoto-freefire.jpeg" alt="">
+                </div>
+
+                        
+            </div>
+        </div>
+    </section>
+    <br><br><br><br>
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <div class="title">
+                <h2>Agendamento</h2>
+            </div>
+            <form >
+                <div class="data">
+                    <div class="input-wrapper">
+                        <label for="nome" >Nome</label>
+                        <input id="nome" placeholder="Digite seu nome completo" type="text" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email" >E-mail</label>
+                        <input id="email" placeholder="Digite seu melhor e-mail" type="email" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="telefone">Telefone</label>
+                        <input id="telefone" placeholder="Digite o número do seu telefone" type="tel" name="" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label>Tipo de serviço</label>
+                        <select required>
+                            <option id="" value="" selected>---Selecione uma opção---</option>
+                            <option value="">Cortar Cabelo</option>
+                            <option value="">Desenhar Barba</option>
+                            <option value="">Cortar Cabelo + Desenhar Barba</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="input-wrapper">
+                    
+
+                        <label for="textarea">Mensagem</label>
+                        <textarea id="textarea" placeholder="Digite seu comentário aqui"></textarea>
+                      
+                            
+                </div>
+
+                <button>Enviar</button>
+
+                
+
+            </form>
+            
+        </div>
+    </section>
+    
+            <!-- SECTION COMENTADA PARA REAVALIAÇÃO FUTURA DE IMPLEMENTAÇÃO DO JS -->
+    <!-- <section  class="appointment2">
+        <div class="container">
+            <div class="title">
+                <h2>Selecione um Horário</h2>
+            </div>
+            <div  class="planilha">
+                <iframe src="https://docs.google.com/spreadsheets/d/12_ERL3O-5MANplheTPHu7xOjYn3yOCm3cO0ju_KkdA0/edit?usp=sharing" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section> -->
+
+    <div class="box-top">
+        <a href="#home" class="seta-home">
+            <img src="./img/seta-cima.png" alt="seta-cima" >
+        </a>
+    </div>
+
+    <section id="location" class="location">
+        <div class="container">
+            <div class="head">
+                <div class="info">
+                    <div class="icon">
+                        <a href="https://www.google.com/maps/@-10.9430283,-37.0651325,3a,18.9y,261.25h,89.29t/data=!3m6!1e1!3m4!1snoGLkzgz53-nfX7wEtfZOA!2e0!7i16384!8i8192" target="_blank">
+                            <img src="./img/map-img1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="https://www.google.com/maps/@-10.9430283,-37.0651325,3a,18.9y,261.25h,89.29t/data=!3m6!1e1!3m4!1snoGLkzgz53-nfX7wEtfZOA!2e0!7i16384!8i8192" target="_blank">
+                            <span>Localização</span>
+                            <span>Rua José de Oliveira Filho, BOX 06</span>
+                        </a>
+                    </div>
+
+
+                    <div class="icon">
+                        <a href=" https://wa.me/5579991036688" target="_blank">
+                            <img src="./img/map-img2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="https://wa.me/5579991036688" target="_blank">
+                            <span>Telefone</span>
+                            <span>(79) 99103-6688</span>
+                        </a>
+                    </div>
+
+
+                    <div class="icon">
+                        <a href="mailto:tecwanks@gmail.com?subject=Olá,gostaria de marcar um horário!" target="_blank">
+                            <img src="./img/map-img3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="mailto:tecwanks@gmail.com?subject=Olá,gostaria de marcar um horário!" target="_blank">
+                            <span>Email</span>
+                            <span>tecwanks@gmail.com</span>
+                        </a>   
+                    </div>
+
+
+                    <div class="icon">
+                        <a href="https://docs.google.com/spreadsheets/d/12_ERL3O-5MANplheTPHu7xOjYn3yOCm3cO0ju_KkdA0/edit?usp=sharing" target="_blank">
+                            <img src="./img/map-img4.png" alt="">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <a href="https://docs.google.com/spreadsheets/d/12_ERL3O-5MANplheTPHu7xOjYn3yOCm3cO0ju_KkdA0/edit#gid=0&range=A1:H13" target="_blank">
+                            <span>Horário</span>
+                            <span>Seg. à Sex. : 9h às 17h</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d531.9452618346263!2d-37.065401840271996!3d-10.943414824155465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3c3beaf88a1%3A0xfe4d405b99acded0!2sConsulado%20da%20Cerveja!5e0!3m2!1spt-BR!2sbr!4v1643934038155!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <br>
+    <footer class="footer">
+        Developed by Josué Feitosa
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,499 @@
+:root{
+    --color-primary: #d3ae59;
+    --color-primary-light: #d8d3c8;
+    --color-secondary: #c09d48;
+    --color-third: #ad8c36;
+    --color-fourth:#997a25;
+    --color-fift:#866913;
+    --color-sixth:#794e16;
+    --color-black: #191919;
+    --color-black-transparent: #19191993;
+    --color-black-transparent2: #000000ed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: var(--color-black);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* **************************
+            HOME
+******************************* */
+
+.home{
+    background-image: url(../img/home1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.home .header .nav{
+    padding: 35px 0;
+}
+.home .header .nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.home .header .nav ul li a{
+    color:var(--color-primary);
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0 15px;
+    font-weight: bold;
+    
+        
+}
+
+.home .header .nav ul li a:hover{
+    border-bottom: 2px solid var(--color-primary);
+    background-color: var(--color-black-transparent);
+    border-radius: 7px;
+}
+
+
+
+/* **************************
+            HOME-BANNER
+******************************* */
+
+.home .banner{
+    color: white;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    left:50%;
+    height: 160px;
+    border-radius: 50px;
+    margin-top: -75px;
+    margin-left: -385px;
+    width: 770px;
+    background-color: var(--color-black-transparent);
+}
+
+.home .banner h1{
+    font-size: 100px;
+}
+
+
+/* **************************
+            SERVIÇOS
+******************************* */
+
+.services{
+    height: 100vh;
+    background-color: var(--color-primary-light);
+    text-align: center;
+}
+
+.services .title{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    color: var(--color-fourth);
+    font-size: 20px;
+}
+
+
+
+.services .box{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px auto 0;
+}
+
+.services .box .boxes{
+    padding: 10px 25px;
+    margin: 0px 30px;
+    width: 30%;
+    transition: 350ms ease-in-out;
+    
+    border: 2px solid var(--color-sixth);
+}
+
+.services .box .boxes h3{
+    font-size: 22px;
+}
+
+.services .box .boxes span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top:10px ;
+}
+
+.services .box .boxes:hover{
+    color: var(--color-sixth);
+    border-radius: 35px;
+    width: 28%;
+    
+    
+}
+
+.services .box .boxes img{
+    height: 10%;
+}
+
+/* **************************
+            GALERIA
+******************************* */
+
+.gallery{
+    background-color: var(--color-black-transparent);
+    height: 100vh;
+    text-align: center;
+}
+
+.gallery .title{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color-primary-light);
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    
+}
+
+/* ESSA É A DIV QUE ENGLOBA TODAS AS FOTOS */
+.gallery .gallery-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 750px;
+    margin: 5px auto;
+
+
+}
+
+/* ESSA REGRA DEIXA A DIV DA FOTO NO TAMANHO DESEJADO */
+.gallery .gallery-wrapper .fotos{
+    
+    justify-content: center;
+    align-items:center;
+    border: 5px outset var(--color-fift);
+    width: 30%;
+
+
+    
+    
+}
+
+
+/* ESSA REGRA ABAIXO É PARA DEIXAR A IMG DO TAMANHO DA DIV EM QUE ELA ESTA INSERIDA */
+.gallery .gallery-wrapper .fotos img{
+    width: 100%;
+
+}
+
+
+
+/* **************************
+            APPOINTMENT
+******************************* */
+
+.appointment{
+    height: 100vh;
+    /* background-color: var(--color-fift); */
+    background-image: url(../img/chair.jpeg);
+    background-size: cover;
+    position: relative;
+}
+
+
+.appointment .title{
+    text-align: center;
+    padding: 70px;
+    margin-bottom: 30px;
+    color: var(--color-primary-light);
+    font-family: 'Poppins' , sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.appointment form{
+    margin-top: 50px;
+    background-color: var(--color-black-transparent);
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.appointment .data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper{
+    width: 100%;
+    margin-right:50px;
+    position: relative;
+}
+
+
+
+
+.appointment .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+
+
+.appointment  label{
+    display: block;
+    color: var(--color-primary-light);
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.appointment .data input,
+.appointment .data select{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+
+
+.appointment textarea{
+    height: 100px;
+    width: 100%;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.appointment button{
+    background-color: var(--color-sixth);
+    color: whitesmoke;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.appointment button:hover{
+    background-color: var(--color-fourth);
+    transition: 350ms ease-in-out;
+}
+
+.appointment .container .bt-1 button a{
+    color: var(--color-primary-light);
+}
+
+.appointment .input-wrapper .bt-1 .btn-horario{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+/**************************************
+           APPOINTMENT2
+**************************************/
+
+.appointment2{
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.appointment2 .container .title{
+    color: #d8d3c8;
+    padding: 20px 0;
+}
+
+.appointment2 .container .planilha{
+    text-align: center;
+    justify-content: center;
+    width: 92%;
+    height: 600px;
+    
+    outline: none;
+    
+}
+.appointment2 .container iframe{
+    width: 90%;
+    height: 91%;
+    border: none;
+    outline: none;
+    border-radius: 15%;
+    border: 10px solid var(--color-fift);
+    box-shadow: 0 0 20px var(--color-primary-light);
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+
+
+
+/**************************************
+           LOCATION
+**************************************/
+.location {
+    height: 125vh;
+    background-image: url(../img/bg-location.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.location .head {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: var(--color-black-transparent);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 15px var(--color-black);
+    
+}
+
+.location .head .info{
+    display: flex;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.location .head .info .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--color-fourth);
+    /* box-shadow: 0 0 10px var(--color-black-transparent); */
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+
+.location .head .info .text{
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.location .head .info .text,
+.location .head .info a{
+    color: var(--color-primary-light);
+}
+
+.location .head .info .text span{
+    display: block;
+}
+
+.location .head .info .text span:first-child{
+    letter-spacing: 2px;
+    padding-bottom: 2px;
+    text-shadow: 0 0 10px var(--color-primary-light);
+}
+
+.location .head .info .text span:last-child{
+    color:var(--color-fourth);
+    font-weight: 500;
+    text-shadow: 0 0 8px var(--color-sixth);
+    
+}
+
+/* MAPS */
+.location .container .maps{
+    margin-top: 50px;
+    width: 100%; 
+    
+}
+
+.location .container .maps iframe{
+    width: 100%;
+    box-shadow: 0 0 20px black;
+}
+
+
+
+
+
+/**************************************
+            SETA-TOPO
+**************************************/
+.box-top img{
+    
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 85%;
+    left:95%;
+
+}
+
+
+/**************************************
+            FOOTER
+**************************************/
+
+
+.footer{
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background-color: black;
+    color: var(--color-primary-light);
+}
+
+
+
+/******************************************************
+                    MEDIA QUERY
+******************************************************/
+
+
+
+/* @media (max-width: 1200px) {
+
+    
+} */
